@@ -1,14 +1,7 @@
 
-// if (typeof web3 !== 'undefined') {
-//     web3 = new Web3(web3.currentProvider);
-// } else {
-//     // set the provider you want from Web3.providers
-// web3 = new Web3(new Web3.providers.HttpProvider("http://127.0.0.1:8545"));
-// }
-
 var web3;
 
-var agentContractAddress = '0x855DB599286649e4ffb6965821D4c0D8Ad64F844';
+var agentContractAddress = '0x799BE2A0e9631292A6177978F4D82a1d2823CAE7';
 
 function connect() {
     web3 = new Web3(window.ethereum)
@@ -25,7 +18,6 @@ function connect() {
 }
 
 window.addEventListener('load', async () => {
-    // New web3 provider
     connect();
     console.log("Externally Loaded!");
 });
